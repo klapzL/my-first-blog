@@ -1,0 +1,35 @@
+{% extends 'blogs/_base.html' %}
+
+{% block title %}Main{% endblock title %}
+    
+{% block content %}
+
+<div class="h">
+    <h1 style="font-family:Georgia, 'Times New Roman', Times, serif">Test</h1>
+</div>
+<div class="blogs">
+    <ul>
+        <strong>
+            {% for blog in blogs %} 
+            <li>
+                {{blog.name}} {{blog.author.name}} {{blog.publication_date}}
+            </li>
+            {% endfor %}
+        </strong>
+    </ul>
+</div>
+<ol style="font-family:Georgia, 'Times New Roman', Times, serif">
+    <li >django-admin startproject core .</li>
+    <li>django-admin startapp "name_of_the_app"</li>
+    <li>manage.py runserver</li>
+</ol>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://guide-images.cdn.ifixit.com/igi/o4OjCNmNeOhvsS1P.large" class="card-img-top" alt="Image haven't loaded">
+    <div class="card-body">
+        <h5 class="card-title">Phone Repair</h5>
+        <p class="card-text">Используйте эти инструкции для ремонта телефонов от всех производителей.</p>
+        <a href="https://ru.ifixit.com/Device/Phone" class="btn btn-primary">Repair</a>
+    </div>
+</div>
+{% endblock content %}
