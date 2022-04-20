@@ -3,6 +3,16 @@
 {% block title %}First blog{% endblock title %}
 {% block content %}
 
-
+<article>
+  <div style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 300%;">Атрибут scoped позволяет включить элементы стиля в середине документа.
+   Внутренние правила применяются только внутри родительского элемента.</div>
+  <p>Этот текст должен быть чёрным. Если он красный, ваш браузер не поддерживает атрибут scoped.</p>
+  <section>
+    <style scoped>
+      p { color: red; }
+    </style>
+    <p>Этот должен быть красным.</p>
+  </section>
+</article>
 {% endblock content %}
     
