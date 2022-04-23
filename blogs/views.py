@@ -37,7 +37,6 @@ def first_blog(request):
     }
     return render(request, 'blogs/first_blog.html', context=context)
 
-
 def cards_page(request):
     context = {
 
