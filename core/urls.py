@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from blogs.views import blog_index, user_page, first_blog
+from blogs.views import blog_index, user_page, first_blog, cards_page, cards_page2
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -25,6 +25,8 @@ urlpatterns = [
     path('', blog_index, name='blog_index'),
     path('user/', user_page, name='user_page'),
     path('first_blog/', first_blog, name='first_blog'),
+    path('cards/', cards_page, name='cards_page'),
+    path('cards/2', cards_page2, name='cards_page2'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,0 +1,92 @@
+{% extends 'blogs/_base.html' %}
+{% load static %}
+
+
+{% block title %}Cards{% endblock title %}
+
+{% block content %}
+<div class="cards">
+    <div class="card">
+        <img src="{% static 'blogs/img/note10.jpg   ' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Xiaomi Redmi Note 10</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'blogs/img/iphone13.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">iPhone 13</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'blogs/img/mi11.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Xiaomi Mi 11 Lite</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'blogs/img/galaxya21.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy A21S</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'blogs/img/note7pro.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Xiaomi Redmi Note 7 Pro</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'blogs/img/galaxya52.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy A52</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'blogs/img/note9.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Xiaomi Redmi Note 9</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'blogs/img/xs.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">iPhone XS</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination pagination-lg">
+          <li class="page-item"><a class="page-link" href="{% url 'cards_page' %}">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="{% url 'cards_page' %}">1</a></li>
+          <li class="page-item active"><a class="page-link" href="#">2</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+</div>
+{% endblock content %}
