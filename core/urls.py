@@ -16,7 +16,7 @@ Including another URLconf
 from unicodedata import name
 from django.contrib import admin
 from django.urls import path
-from blogs.views import blog_index, user_page, first_blog, cards_page, cards_page2, card_details
+from blogs.views import blog_index, user_page, first_blog, products_page, products_page2, product_details
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -26,9 +26,9 @@ urlpatterns = [
     path('', blog_index, name='blog_index'),
     path('user/', user_page, name='user_page'),
     path('first_blog/', first_blog, name='first_blog'),
-    path('cards/', cards_page, name='cards_page'),
-    path('cards/2', cards_page2, name='cards_page2'),
-    path('cards/details/12345', card_details, name='card_details')
+    path('products/', products_page, name='products_page'),
+    path('products/2', products_page2, name='products_page2'),
+    path('product/details/12345', product_details, name='product_details')
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

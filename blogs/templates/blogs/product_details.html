@@ -9,16 +9,18 @@
 </h1>
 <div class="details mx-auto" style="width: 80em;">
     <div class="col-md-4">
-        <img src="{% static 'blogs/img/iphone-13.png' %}" class="img-fluid rounded-start" alt="None">
+        <img src="{% static 'blogs/img/iphone-13-pmg.png' %}" class="img-fluid rounded-start" alt="None">
     </div>
-    <div class="card border-light mb-3">
+    <div class="card-descr border-light mb-3">
         <div class="row g-0">
             <div class="descriptions">
                 <ul class="list-group list-group-flush bg-light">
                     <li class="list-group-item">
-                        <a class="btn-warning" href="#chars">
-                            <h4>Характеристики</h4>
-                        </a>
+                        <div class="chars-btn-scroll">
+                            <a href="#chars" style="color: black;">
+                                <h4>Характеристики</h4>
+                            </a>
+                        </div>
                     </li>
                     <li class="list-group-item">
                         <h2 style="font-weight:bold;">156 000 сом</h2>
@@ -47,7 +49,7 @@
         Характеристики
     </h3>
     <div class="table-chars">
-        <table class="table table-sm">
+        <table class="table table-bordered">
             <thead>
                 <tr>
                     <th scope="col">

@@ -37,22 +37,22 @@ def first_blog(request):
     }
     return render(request, 'blogs/first_blog.html', context=context)
 
-def cards_page(request):
+def products_page(request):
     context = {
 
     }
-    return render(request, 'blogs/cards_page.html', context=context)
+    return render(request, 'blogs/products_page.html', context=context)
 
 
-def cards_page2(request):
+def products_page2(request):
     context = {
 
     }
-    return render(request, 'blogs/cards_page2.html', context=context)
+    return render(request, 'blogs/products_page2.html', context=context)
 
 
-def card_details(request):
+def product_details(request):
     context = {
         
     }
-    return render(request, 'blogs/card_details.html', context=context)
+    return render(request, 'blogs/product_details.html', context=context)
