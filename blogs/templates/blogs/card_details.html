@@ -1,0 +1,120 @@
+{% extends 'blogs/_base.html' %}
+{% load static %}
+
+{% block title %}iPhone 13{% endblock title %}
+{% block content %}
+
+<h1 class="name">
+    iPhone 13 Pro Max, 1 TB, Green
+</h1>
+<div class="details mx-auto" style="width: 80em;">
+    <div class="col-md-4">
+        <img src="{% static 'blogs/img/iphone-13.png' %}" class="img-fluid rounded-start" alt="None">
+    </div>
+    <div class="card border-light mb-3">
+        <div class="row g-0">
+            <div class="descriptions">
+                <ul class="list-group list-group-flush bg-light">
+                    <li class="list-group-item">
+                        <a class="btn-warning" href="#chars">
+                            <h4>Характеристики</h4>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <h2 style="font-weight:bold;">156 000 сом</h2>
+                        <span>
+                            ~$1800
+                        </span>
+                        <div class="in-stock">
+                            <img src="{% static 'blogs/img/in-stock.svg' %}" alt="">
+                            Товар в наличии
+                        </div>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                В связи с нестабильностью валютного курса цены могут не соответствовать указанным на
+                                сайте. Уточняйте цены у менеджеров: +996 220 011111
+                            </small>
+                        </p>
+                        <button type="button" class="btn-bag btn btn-warning">Добавить в корзину</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id='chars' class="characteristics">
+    <h3>
+        Характеристики
+    </h3>
+    <div class="table-chars">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Основная Информация
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Производитель</td>
+                    <td>APPLE</td>
+                </tr>
+                <tr>
+                    <td>Серия</td>
+                    <td>iPhone 13 Pro Max</td>
+                </tr>
+                <tr>
+                    <td>Тип продукта</td>
+                    <td>Сотовый телефон</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Дисплей
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Размер дисплея</td>
+                    <td>6.70"</td>
+                </tr>
+                <tr>
+                    <td>Разрешение экрана</td>
+                    <td>1284x2778</td>
+                </tr>
+                <tr>
+                    <td>Яркость изображения</td>
+                    <td>1000 кд/м²</td>
+                </tr>
+                <tr>
+                    <td>Контрастность</td>
+                    <td>2 000 000:1</td>
+                </tr>
+                <tr>
+                    <td>Плотность пикселей</td>
+                    <td>458 точек на дюйм</td>
+                </tr>
+                <tr>
+                    <td>Технология дисплея</td>
+                    <td>OLED</td>
+                </tr>
+                <tr>
+                    <td>Сенсорный экран</td>
+                    <td>Ёмкостный, Тактильный отклик при нажатии</td>
+                </tr>
+                <tr>
+                    <td>Дополнительные особенности</td>
+                    <td>Устойчивое к отпечаткам олеофобное покрытие, Поддержка одновременного отображения нескольких
+                        языков и наборов символов, Дисплей с расширенным цветовым охватом (P3), Дисплей True Tone, HDR,
+                        Super Retina XDR дисплей, Яркость до 1200 кд/м² при просмотре контента в формате HDR, Передняя
+                        панель Ceramic Shield</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock content %}

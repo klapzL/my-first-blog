@@ -13,9 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from unicodedata import name
 from django.contrib import admin
 from django.urls import path
-from blogs.views import blog_index, user_page, first_blog, cards_page, cards_page2
+from blogs.views import blog_index, user_page, first_blog, cards_page, cards_page2, card_details
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,6 +28,7 @@ urlpatterns = [
     path('first_blog/', first_blog, name='first_blog'),
     path('cards/', cards_page, name='cards_page'),
     path('cards/2', cards_page2, name='cards_page2'),
+    path('cards/details/12345', card_details, name='card_details')
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

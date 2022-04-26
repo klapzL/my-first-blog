@@ -49,3 +49,10 @@ def cards_page2(request):
 
     }
     return render(request, 'blogs/cards_page2.html', context=context)
+
+
+def card_details(request):
+    context = {
+        
+    }
+    return render(request, 'blogs/card_details.html', context=context)
