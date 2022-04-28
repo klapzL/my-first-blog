@@ -5,11 +5,51 @@
 {% block content %}
 
 <h1 class="name">
-    iPhone 13 Pro Max, 1 TB, Green
+    iPhone 13 Pro Max, 1 ТБ
 </h1>
 <div class="details mx-auto" style="width: 80em;">
     <div class="col-md-4">
-        <img src="{% static 'blogs/img/iphone-13-pmg.png' %}" class="img-fluid rounded-start" alt="None">
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'blogs/img/iphone13f.webp'%}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'blogs/img/iphone-13-camera.webp' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'blogs/img/iphone-13-many.webp' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'blogs/img/iphone-13-set.webp' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'blogs/img/iphone-13-access.webp' %}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
     </div>
     <div class="card-descr border-light mb-3">
         <div class="row g-0">
@@ -17,7 +57,7 @@
                 <ul class="list-group list-group-flush bg-light">
                     <li class="list-group-item">
                         <div class="chars-btn-scroll">
-                            <a href="#chars" style="color: black;">
+                            <a href="#chars" style="color: #EF7F1A;">
                                 <h4>Характеристики</h4>
                             </a>
                         </div>
@@ -37,7 +77,13 @@
                                 сайте. Уточняйте цены у менеджеров: +996 220 011111
                             </small>
                         </p>
-                        <button type="button" class="btn-bag btn btn-warning">Добавить в корзину</button>
+                        <button type="button" class="btn-cart btn-bag btn btn-warning">
+                            <img src="{% static 'blogs/img/cart.svg' %}" alt="">
+                            <span style="color: white;">
+                                В корзину
+                            </span>
+
+                        </button>
                     </li>
                 </ul>
             </div>

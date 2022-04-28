@@ -1,113 +1,144 @@
+@font-face {
+  font-family: "SF UI Display Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("SF UI Display Regular"),
+    url("SF-UI-Display-Regular.otf") format("woff");
+}
 body {
-    /* font-family: 'SUDisplay','SF-UI-Text', 'Montserrat', sans-serif; */
-    background-color: white;
-    color: black;
+  font-family: "SUDisplay", "SF UI Display Regular", sans-serif;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    width: 80em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  width: 80em;
 }
 
 .heading {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 80em; */
-    padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 80em; */
+  padding-top: 50px;
 }
 
 .card {
-    margin: 7px;
-    width: 18rem;
+  margin: 7px;
+  width: 18rem;
 }
 
 .card img {
-    width: 18rem;
-    height: 18rem;
-    object-fit: cover;
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
 }
 
 .pages {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
 }
 
 p.card-text {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .details {
-    display: flex;
-    width: 80em;
+  display: flex;
+  width: 80em;
 }
 
 .name {
-    margin-left: auto;
-    margin-right: auto;
-    width: 30.5em;
-    margin-bottom: 20px;
-    margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30.5em;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .in-stock {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .in-stock img {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 .btn-bag {
-    margin-top: 70px;
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 600;
+  /* margin-top: 70px; */
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .main-menu {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80em;
 }
 p.desriptions {
-    font-size: 50px;
+  font-size: 50px;
 }
 div.table-chars {
-    width: 40em;
+  width: 40em;
 }
 thead {
-    display: table-header-group;
-    font-size: 1.15em;
+  display: table-header-group;
+  font-size: 1.15em;
+}
+
+a {
+  text-decoration: none;
 }
 .chars-btn-scroll {
-    background:#ffc107;
-    border: 10px solid #ffc107;
+  color: #ef7f1a;
+  /* background:#EF7F1A;
+    border: 10px solid #EF7F1A;
     border-radius: 0.3rem;
     padding: 0.5rem 1rem;
-    width: 15.22em;
+    width: 15.22em; */
 }
 .characteristics {
-    margin-top: 60px;
-    margin-bottom: 100px;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 .card-descr {
-    margin-left: 60px;
+  margin-left: 60px;
+}
+/* .carousel-item img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+} */
+.carousel-item img {
+  max-width: 100%;
+  height: max-content;
+  vertical-align: middle;
+}
+
+.btn-cart {
+  background-color: #ef7f1a;
+  border-color: #ef7f1a;
+}
+.btn-cart img {
+  margin-right: 10px;
+}
+.carousel {
+    height: 25rem;
 }
